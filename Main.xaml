@@ -118,7 +118,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
           <av:Size x:Key="ShapeSize">60,75</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,398.53999999999996 110,398.53999999999996 110,428.54</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 410,107.5 410,478.54</av:PointCollection>
           <x:Double x:Key="Width">680</x:Double>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
@@ -371,14 +371,14 @@
           <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,86" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[string.join(&quot;,&quot;,vDictionary)]" />
         </Sequence>
       </FlowStep>
-      <FlowStep x:Name="__ReferenceID0">
+      <FlowStep>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">10,428.54</av:Point>
             <av:Size x:Key="ShapeSize">200,83</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Action Center" sap:VirtualizedContainerService.HintSize="441.5,990" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <Sequence DisplayName="Action Center" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_13">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="amtReimburse" />
             <Variable x:TypeArguments="x:Int32" Name="ReimburseAmount" />
@@ -420,6 +420,22 @@
             </sap:WorkflowViewStateService.ViewState>
           </upaf:WaitForFormTaskAndResume>
           <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="379.5,86" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[ReimburseAmount.ToString]" />
+        </Sequence>
+      </FlowStep>
+      <FlowStep x:Name="__ReferenceID0">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">310,478.54</av:Point>
+            <av:Size x:Key="ShapeSize">200,83</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="Git" sap:VirtualizedContainerService.HintSize="400,197" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="338,86" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Git Commit&quot;]" />
         </Sequence>
       </FlowStep>
     </Flowchart>
